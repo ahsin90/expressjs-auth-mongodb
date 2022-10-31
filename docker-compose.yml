@@ -1,6 +1,20 @@
 version: "3.7"
 
 services:
+  app:
+    container_name: expressmongojwt
+    image: expressmongojwt:latest
+    ports:
+      - '5000:3000'
+    environment:
+            NODE_ENV: "development"
+            PORT: 3000
+            SECRET_KEY: eyJ1c2VyX2lkIjoyLCJlbWFpbCI6ImFoc2luLmFuZEBnbWFpbC5jb20iLCJpYXQiOjE2NjM5MTcwNjEsImV4c
+            DB_HOST: mongo-dev
+            DB_PORT: 27017
+            DB_USER: admin
+            DB_PASSWORD: pass
+            DB_NAME: admin
   db:
     container_name: mongo-dev
     image: mongo:4.4
