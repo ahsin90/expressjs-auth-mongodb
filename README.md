@@ -47,7 +47,7 @@ DB_NAME=admin
 
 ## Run with Docker?
 Docker is a simple way to run the project, follow the instruction below:
-1. Build a Docker image that runs ```docker build -t expressjwt .``` on your console and in the project root.
+1. Build a Docker image that runs ```docker build -t expressmongojwt .``` on your console and in the project root.
 2. Run ```docker compose up```
 
 
